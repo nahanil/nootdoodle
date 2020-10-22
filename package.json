@@ -1,0 +1,31 @@
+{
+  "name": "nootdoodle",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "sails": "^1.2.4",
+    "@sailshq/lodash": "^3.10.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "5.16.0",
+    "mocha": "^8.2.0",
+    "supertest": "^5.0.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "NODE_ENV=test PORT=1229 mocha --exit test/lifecycle.test.js test/controllers/**.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jarrod/nootdoodle.git"
+  },
+  "author": "jarrod",
+  "license": "",
+  "engines": {
+    "node": "^12.16"
+  }
+}
